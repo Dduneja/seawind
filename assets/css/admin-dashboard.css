@@ -1,0 +1,32 @@
+.container{
+    width: 100%;
+    padding: 2em;
+    text-align: center;
+}
+
+.title{
+    font-size: 2em;
+}
+
+.dashboard-links{
+    width: 50%;
+    display: flex;
+    margin: 1em auto ;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.dashboard-link{
+    border: 2px solid black;
+    padding: 0.25em 1em;
+    border-radius: 0.5em;
+}
+
+.dashboard-link:hover{
+    background-color: #eee;
+}
+
+.dashboard-link a{
+    text-decoration: none;
+    color: blue;
+}

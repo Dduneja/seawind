@@ -1,0 +1,15 @@
+.container{
+    width: 100%;
+}
+
+table{
+    width:80%;
+    margin: 1em auto;
+    border-spacing: 0;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+

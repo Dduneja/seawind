@@ -1,0 +1,27 @@
+.container{
+    width: 80%;
+    margin: 1em auto;
+}
+.form-input{
+    text-align: center;
+}
+
+.form-input input{
+    width: 20%;
+}
+
+.form-input button{
+    padding: 0.25em 1em;
+}
+
+.loss{
+    color: red;
+}
+
+.profit{
+    color: limegreen;
+}
+
+table{
+    width: 100%;
+}

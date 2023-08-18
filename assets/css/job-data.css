@@ -1,0 +1,24 @@
+.container{
+    width: 100%;
+    padding: 30px 5%;
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+table{
+    border-spacing: 0;
+    width: 100%;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.Completed{
+    color: forestgreen;
+}

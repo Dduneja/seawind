@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+</head>
+<style>
+    table{
+        border-spacing: 0;
+        
+    }
+
+    td{
+        padding: 3px;
+        vertical-align: top;
+        /* border: .25px solid; */
+        
+    }
+
+    p{
+        font-size: 9px;
+    }
+
+</style>
+<body>
+    <div class="container" style=" width:700px;">
+        <table class="one" width="100%" style=" margin: 5px;">
+            <tr style="font-weight: bold;">
+                <td style="border-right: 0; font-size:13px;">SEAWIND SHIPPING & LOGISTICS</td>
+                <td style="border-left: 0; text-align: right; font-size: 16px;">TAX INVOICE</td>
+            </tr>
+        </table>
+        <table class="two" width="100%" style=" margin: 5px; font-size: 12px;">
+            <tr>
+                <td style="border-right: 0;">
+                    Office no.13, Kishore Residency,<br> 
+                    Plot no.19, Sector 7, <br>
+                    Gandhidham - 370201, Kutch ,Gujarat.<br>
+                    Tel - +91 9825110579<br>
+                    GST NO: 24AEYPV4389M127<br>
+                    PAN NO: AEYPV4389M</td>
+                <td style="border-left: 0; text-align: right;">ORIGINAL FOR RECIPIENT<br> 
+                    WHLAHMEOD2300939 <br>
+                    27/04/2023</td>
+            </tr>
+            <tr>
+                <td><b>Place Of Supply:</b>
+                    Gujarat
+                </td>
+            </tr>
+            
+        </table>
+        <table class="three"  width="100%" style=" margin: 5px; font-size: 12px; text-align: center; border: .25px solid black; " >
+            <tr style="height: 50px;">
+                <td style="width: 20%; border: .25px solid black;"><b>BL#</b><br>
+                    {{BL}}
+                </td>
+                <td style="width: 20%; border: .25px solid black;"><b>Vessel</b><br>
+                    {{Vessel}}
+                </td>
+                <td style="width: 20%; border: .25px solid black;"><b>Arrival</b><br>
+                    {{arrival}}
+                </td>
+                <td style="width: 20%; border: .25px solid black;"><b>PLR</b><br>
+                    {{PLR}}
+                </td>
+                <td style="width: 20%; border: .25px solid black;"><b>POD</b><br>
+                    {{POD}}
+                </td>
+            </tr>
+            <tr style="height: 50px;">
+                <td style="width: 20%; border: .25px solid black;"><b>BL Date</b><br>
+                    {{BL-Date}}
+                </td>
+                <td style="width: 20%; border: .25px solid black;"><b>Voyage</b><br>
+                    {{Voyage}}
+                </td>
+                <td style="width: 20%; border: .25px solid black;"><b>Sailing</b><br>
+                    {{Sailing}}
+                </td>
+                <td style="width: 20%; border: .25px solid black;"><b>POL</b><br>
+                    {{POL}}
+                </td>
+                <td style="width: 20%; border: .25px solid black;"><b>FPD</b><br>
+                    {{FPD}}
+                </td>
+            </tr>
+            <tr style="height: 50px;">
+                <td style=" border: .25px solid black;"><b>Container</b><br>
+                    {{Cont}}
+                </td>
+                <td style=" border: .25px solid black;"><b>Cargo Type</b><br>
+                    {{Cargo}}
+                </td>
+                <td style=" border: .25px solid black;"><b>Remark</b><br>
+                    {{Remark}}
+                </td>
+                <td colspan="2" style="border: .25px solid black;"><b>Shipper</b><br>
+                    SEAWIND SHIPPING & LOGISTICS
+                </td>
+            </tr>
+        </table> 
+        <table class="four"  width="100%" style=" margin: 5px; font-size: 12px;" >
+            <tr style="text-align: center;">
+                <td style="width: 24%; border: .25px solid black;"><b>Description of Service</b>
+                </td>
+                <td style="width: 6%; border: .25px solid black;"><b>SAC Code</b>
+                </td>
+                <td style="width: 5%; border: .25px solid black;"><b>QTY.</b>
+                </td>
+                <td style="width: 5%; border: .25px solid black;"><b>Rate</b>
+                </td>
+                <td style="width: 5%; border: .25px solid black;"><b>Curr</b>
+                </td>
+                <td style="width: 10%; border: .25px solid black;"><b>Taxable Amount (INR)</b>
+                </td>
+                <td style="width: 8%; border: .25px solid black;"><b>IGST</b>
+                </td>
+                <td style="width: 10%; border: .25px solid black;"><b>Total Amount</b>
+                </td>
+            </tr>
+            <tr style="height: 300px; font-size: 12px;">
+                <td style="border: .25px solid black;">
+                    {{ cgstSer }}
+                </td>
+                <td style="border: .25px solid black;">
+                    {{ cgstsac }}
+                </td>
+                <td style="border: .25px solid black;">
+                    {{ cgstqty }}
+                </td>
+                <td style="border: .25px solid black;">
+                    {{ cgstrate }}
+                </td>
+                <td style="border: .25px solid black;">
+                    {{ cgst curr }}
+                </td>
+                <td style="border: .25px solid black;">
+                    {{ cgst taxable Amount }}
+                </td>
+                <td style="border: .25px solid black;">
+                    {{ cgstigst }}
+                </td>
+                <td style="border: .25px solid black;">
+                    {{ cgsttotal }}
+                </td>
+            </tr>
+            <tr>
+                <td style="border: .25px solid black; text-align: right;" colspan="5">
+                    <b>TOTAL</b>
+                </td>
+                <td style="border: .25px solid black;">
+                    <b>{{ ctAmount }}</b>
+                </td>
+                <td style="border: .25px solid black;">
+                    <b>{{ ctigst }}</b>
+                </td>
+                <td style="border: .25px solid black;">
+                    <b>{{ cttotal }}</b>
+                </td>
+            </tr>
+        </table>
+        <table class="five"  width="100%" style=" margin: 5px; font-size: 12px; text-align: center; " >
+            <tr>
+                <td style="text-align: left;"><b>INR:</b> {{cinr}} only<br>
+                    <p style="font-size: 9px;">DENOTES ITEMS ON WHICH GOODS & SERVICE TAX IS APPLICABLE. INVOICE AMOUNT HAS BEEN ROUNDED OFF TO THE 
+                    NEAREST VALUE</p>
+                </td>
+            </tr>
+        </table>
+        <table class="six"  width="100%" style=" margin: 5px; font-size: 12px; text-align: center; border: .25px solid black;" >
+            <tr style="height: 50px;">
+                <td style="width: 25%;"><b>Excahnge Rate</b><br>
+                    {{exc}}
+                </td>
+                <td style="width: 25%;"><b>PAN</b><br>
+                    {{pan}}
+                </td>
+                <td style="width: 25%;"><b>GST</b><br>
+                    {{gst}}
+                </td>
+                <td style="width: 25%;"><b>CIN</b><br>
+                    {{cin}}
+                </td>
+            </tr>
+        </table> 
+        <table class="seven"  width="100%" style=" margin: 5px; font-size: 12px; text-align: left; border: .25px solid black; " >
+            <tr>
+                <td colspan="2" rowspan="4" style="width: 50%; border-right: .25px solid black;">FOR <b>SEAWIND SHIPPING & LOGISTICS</b></td>
+                <td style="width: 25%;"><b>Account Name</b><br>
+                    {{acc}}
+                </td>
+                <td style="width: 25%;"><b>Account No.</b><br>
+                    {{acn}}
+                </td>
+            </tr>
+            <tr style="height: 50px;">
+                
+                <td style="width: 25%;"><b>Bank Name</b><br>
+                    {{bank}}
+                </td>
+                <td style="width: 25%;"><b>Branch Name</b><br>
+                    {{bname}}
+                </td>
+            </tr>
+            <tr style="height: 50px;">
+                
+                <td colspan="2" style="width: 25%;"><b>Bank Address</b><br>
+                    {{badd}}
+                </td>
+            </tr>
+            <tr style="height: 50px;">
+                
+                <td style="width: 25%;"><b>Swiftcode</b><br>
+                    {{swift}}
+                </td>
+                <td style="width: 25%;"><b>IFSC</b><br>
+                    {{ifsc}}
+                </td>
+            </tr>
+        </table>      
+    </div>
+    <br><br><br>
+
+    <div class="container" style=" width:700px;">
+        <table class="one" width="100%" style=" margin: 5px;">
+            <tr style="font-weight: bold;">
+                <td style="border-right: 0; font-size:13px;">SEAWIND SHIPPING & LOGISTICS</td>
+                <td style="border-left: 0; text-align: right; font-size: 16px;">TAX INVOICE</td>
+            </tr>
+        </table>
+        <table class="two" width="100%" style=" margin: 5px; font-size: 12px;">
+            <tr>
+                <td style="border-right: 0;">
+                    Office no.13, Kishore Residency,<br> 
+                    Plot no.19, Sector 7, <br>
+                    Gandhidham - 370201, Kutch ,Gujarat.<br>
+                    Tel - +91 9825110579<br>
+                    GST NO: 24AEYPV4389M127<br>
+                    PAN NO: AEYPV4389M</td>
+                <td style="border-left: 0; text-align: right;">ORIGINAL FOR RECIPIENT<br> 
+                    WHLAHMEOD2300939 <br>
+                    27/04/2023</td>
+            </tr>
+            <tr>
+                <td><b>Place Of Supply:</b>
+                    Gujarat
+                </td>
+            </tr>
+            
+        </table>
+        <table class="three"  width="100%" style=" margin: 5px; font-size: 12px; text-align: center; border: .25px solid black; " >
+            <tr style="height: 50px;">
+                <td style="width: 20%; border: .25px solid black;"><b>BL#</b><br>
+                    {{BL}}
+                </td>
+                <td style="width: 20%; border: .25px solid black;"><b>Vessel</b><br>
+                    {{Vessel}}
+                </td>
+                <td style="width: 20%; border: .25px solid black;"><b>Arrival</b><br>
+                    {{arrival}}
+                </td>
+                <td style="width: 20%; border: .25px solid black;"><b>PLR</b><br>
+                    {{PLR}}
+                </td>
+                <td style="width: 20%; border: .25px solid black;"><b>POD</b><br>
+                    {{POD}}
+                </td>
+            </tr>
+            <tr style="height: 50px;">
+                <td style="width: 20%; border: .25px solid black;"><b>BL Date</b><br>
+                    {{BL-Date}}
+                </td>
+                <td style="width: 20%; border: .25px solid black;"><b>Voyage</b><br>
+                    {{Voyage}}
+                </td>
+                <td style="width: 20%; border: .25px solid black;"><b>Sailing</b><br>
+                    {{Sailing}}
+                </td>
+                <td style="width: 20%; border: .25px solid black;"><b>POL</b><br>
+                    {{POL}}
+                </td>
+                <td style="width: 20%; border: .25px solid black;"><b>FPD</b><br>
+                    {{FPD}}
+                </td>
+            </tr>
+            <tr style="height: 50px;">
+                <td style=" border: .25px solid black;"><b>Container</b><br>
+                    {{Cont}}
+                </td>
+                <td style=" border: .25px solid black;"><b>Cargo Type</b><br>
+                    {{Cargo}}
+                </td>
+                <td style=" border: .25px solid black;"><b>Remark</b><br>
+                    {{Remark}}
+                </td>
+                <td colspan="2" style="border: .25px solid black;"><b>Shipper</b><br>
+                    SEAWIND SHIPPING & LOGISTICS
+                </td>
+            </tr>
+        </table> 
+        <table class="three"  width="100%" style=" margin: 5px; font-size: 12px; border: .25px solid black; " >
+            <tr style="text-align: center;"> 
+                <td style="width: 26%; border: .25px solid black;"><b>Description of Service</b>
+                </td>
+                <td style="width: 9%; border: .25px solid black;"><b>SAC Code</b>
+                </td>
+                <td style="width: 7%; border: .25px solid black;"><b>QTY.</b>
+                </td>
+                <td style="width: 8%; border: .25px solid black;"><b>Rate</b>
+                </td>
+                <td style="width: 6%; border: .25px solid black;"><b>Curr</b>
+                </td>
+                <td style="width: 10%; border: .25px solid black;"><b>Taxable Amount (INR)</b>
+                </td>
+                <td style="width: 8%; border: .25px solid black;"><b>CGST</b>
+                </td>
+                <td style="width: 8%; border: .25px solid black;"><b>SGST</b>
+                </td>
+                <td style="width: 10%; border: .25px solid black;"><b>Total Amount</b>
+                </td>
+            </tr>
+            <tr style="height: 300px;">
+                <td style="width: 26%; border: .25px solid black;">
+                    {{ igstSer }}
+                </td>
+                <td style="width: 9%; border: .25px solid black;">
+                    {{ igstsac }}
+                </td>
+                <td style="width: 7%; border: .25px solid black;">
+                    {{ igstqty }}
+                </td>
+                <td style="width: 8%; border: .25px solid black;">
+                    {{ igstrate }}
+                </td>
+                <td style="width: 6%; border: .25px solid black;">
+                    {{ igst curr }}
+                </td>
+                <td style="width: 10%; border: .25px solid black;">
+                    {{ igst taxable Amount }}
+                </td>
+                <td style="width: 8%; border: .25px solid black;">
+                    {{ igstcgst }}
+                </td>
+                <td style="width: 8%; border: .25px solid black;">
+                    {{ igstsgst }}
+                </td>
+                <td style="width: 10%; border: .25px solid black;">
+                    {{ igsttotal }}
+                </td>
+            </tr>
+            <tr>
+                <td style="border: .25px solid black; text-align: right;" colspan="5">
+                    <b>TOTAL</b>
+                </td>
+                <td style="border: .25px solid black;">
+                    <b>{{ itAmount }}</b>
+                </td>
+                <td style="border: .25px solid black;">
+                    <b>{{ itcgst }}</b>
+                </td>
+                <td style="border: .25px solid black;">
+                    <b>{{ itsgst }}</b>
+                </td>
+                <td style="border: .25px solid black;">
+                    <b>{{ ittotal }}</b>
+                </td>
+            </tr>
+        </table>
+        <table class="five"  width="100%" style=" margin: 5px; font-size: 12px; text-align: center; " >
+            <tr>
+                <td style="text-align: left;"><b>INR: </b>{{iinr}} only<br>
+                    <p style="font-size: 9px;">DENOTES ITEMS ON WHICH GOODS & SERVICE TAX IS APPLICABLE. INVOICE AMOUNT HAS BEEN ROUNDED OFF TO THE 
+                    NEAREST VALUE</p>
+                </td>
+            </tr>
+        </table>
+        <table class="six"  width="100%" style=" margin: 5px; font-size: 12px; text-align: center; border: .25px solid black;" >
+            <tr style="height: 50px;">
+                <td style="width: 25%;"><b>Excahnge Rate</b><br>
+                    {{exc}}
+                </td>
+                <td style="width: 25%;"><b>PAN</b><br>
+                    {{pan}}
+                </td>
+                <td style="width: 25%;"><b>GST</b><br>
+                    {{gst}}
+                </td>
+                <td style="width: 25%;"><b>CIN</b><br>
+                    {{cin}}
+                </td>
+            </tr>
+        </table> 
+        <table class="seven"  width="100%" style=" margin: 5px; font-size: 12px; text-align: left; border: .25px solid black; " >
+            <tr>
+                <td colspan="2" rowspan="4" style="width: 50%; border-right: .25px solid black;">FOR <b>SEAWIND SHIPPING & LOGISTICS</b></td>
+                <td style="width: 25%;"><b>Account Name</b><br>
+                    {{acc}}
+                </td>
+                <td style="width: 25%;"><b>Account No.</b><br>
+                    {{acn}}
+                </td>
+            </tr>
+            <tr style="height: 50px;">
+                
+                <td style="width: 25%;"><b>Bank Name</b><br>
+                    {{bank}}
+                </td>
+                <td style="width: 25%;"><b>Branch Name</b><br>
+                    {{bname}}
+                </td>
+            </tr>
+            <tr style="height: 50px;">
+                
+                <td colspan="2" style="width: 25%;"><b>Bank Address</b><br>
+                    {{badd}}
+                </td>
+            </tr>
+            <tr style="height: 50px;">
+                
+                <td style="width: 25%;"><b>Swiftcode</b><br>
+                    {{swift}}
+                </td>
+                <td style="width: 25%;"><b>IFSC</b><br>
+                    {{ifsc}}
+                </td>
+            </tr>
+        </table>      
+    </div>
+    <script>
+        window.print();
+    </script>
+</body>
+</html>

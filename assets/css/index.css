@@ -1,0 +1,120 @@
+.form{
+    display: block;
+    padding: 50px 5%;
+}
+
+.form-line{
+    display: flex;
+    align-items: center;
+}
+
+.form-input select{
+    width: 100%;
+    padding: 10px;
+}
+
+.form-input button{
+    padding: 0.25em 1em;
+}
+
+.form-input{
+    width: 100% ;
+    padding: 10px;
+}
+
+.input{
+    width: 100%;
+    padding: 10px;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item-detail-desp{
+    width: 40%;
+}
+
+.item-detail-rate{
+    width:10%;
+}
+
+.item-detail-curr{
+    width: 10%;
+}
+
+.item-detail-exrate{
+    width: 10%;
+}
+
+.add-btn{
+    padding: 10px 20px;
+}
+
+.table-desp{
+    width: 20%;
+}
+
+.table-HSN, .table-rate, .table-qty, .table-curr, .table-cgst, .table-sgst, .table-igst, .table-total, .table-gst-rate, .table-gst-amount, .table-remove{
+    width: 10%;
+    
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.table-element{
+    width: 100%;
+    margin-block: 50px;
+    border: 1px solid black;
+    border-spacing: 0;
+}
+
+#igst-desp, #cgst-desp, #shipper {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#igst-desp-options, #cgst-desp-options, #shipper-options, #consignee-options, #notify-options {
+    position: absolute;
+    list-style: none;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+#igst-desp-options li, #cgst-desp-options li, #shipper-options li, #consignee-options li, #notify-options li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+#igst-desp-options li:hover, #cgst-desp-options li:hover, #shipper-options li:hover, #consignee-options li:hover, #notify-options li:hover {
+    background-color: #f4f4f4;
+}
+
+#igst-desp:focus + #igst-desp-options, #cgst-desp:focus + #cgst-desp-options, #shipper:focus + #shipper-options, #consignee:focus + #consignee-options, #notify:focus + #notify-options{
+    opacity: 1;
+}
+
+.form-title {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.submit-btn{
+    text-align: center;
+}
+
+.generate-btn{
+    padding: 5px 20px;
+}

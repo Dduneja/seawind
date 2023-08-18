@@ -1,0 +1,25 @@
+.container{
+    width: 100vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-block: 5em;
+}
+
+.link{
+    border: 1px solid black;
+    padding: 5px 20px;
+    border-radius: 10px;;
+    margin: 5px;
+}
+
+.link:hover{
+    background-color: #eee;
+}
+
+.link a{
+    text-decoration: none;
+    color: blue;
+}

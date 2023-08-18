@@ -1,0 +1,20 @@
+.container{
+    width: 100%;
+    text-align: center;
+}
+
+.title{
+    font-size: 2em;
+    margin: 1em;
+}
+table{
+    margin: 1em auto;
+    border-spacing: 0;
+    width: 60%; 
+}
+
+th, td{
+    border: 1px solid black;
+    width: 25%;
+    padding: 0.5em;
+}

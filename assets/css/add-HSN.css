@@ -1,0 +1,92 @@
+.container{
+    width: 100%;
+    padding: 20px 5%;
+}
+
+.title{
+    font-size: 30px;
+    padding: 20px 0px;
+}
+
+.form{
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    margin-block: 20px;
+}
+
+.form form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-input{
+    padding: 10px;
+}
+
+.input{
+    padding: 5px 5px;
+}
+
+#desp{
+    width: 20vw;
+}
+
+#hsn{
+    width: 5vw;
+}
+
+#gst{
+    width: 5vw;
+}
+
+.submit-btn{
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 2px solid #49AF41;
+    color: white;
+    background-color: #49AF41;
+    cursor: pointer;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover{
+    background-color: white;
+    color: #49AF41;
+}
+
+table{
+    border-spacing: 0;
+    border: 0.5px solid black;
+}
+
+th, td{
+    margin: 0;
+    border: 0.5px solid black;
+    padding: 10px;
+}
+
+td{
+    text-align: left;
+}
+
+.change{
+    padding: 5px 10px;
+}
+
+.change-submit{
+    padding: 5px 10px;
+    margin: 0 10px;
+}
+
+#changeWindow{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    padding: 20px;
+    border: 1px solid black;
+    background-color: #eee;
+}

@@ -1,0 +1,45 @@
+[16-Jul-2023 09:34:29 UTC] PHP Notice:  A non well formed numeric value encountered in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-purchase.php on line 49
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: BL in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 3
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: shipper-name in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 4
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: ship-add-l-1 in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 5
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: ship-add-l-2 in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 6
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: ship-add-l-3 in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 7
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: ship-email in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 8
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: ship-mobile in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 9
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: con-name in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 11
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: con-add-l-1 in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 12
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: con-add-l-2 in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 13
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: con-add-l-3 in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 14
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: con-email in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 15
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: con-mobile in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 16
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: notify-name in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 25
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: notify-add-l-1 in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 26
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: notify-add-l-2 in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 27
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: notify-add-l-3 in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 28
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: notify-email in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 29
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: notify-mobile in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 30
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: pol in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 38
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: pod in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 39
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: vessel in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 40
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: voyage in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 41
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: ship-line in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 42
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: desp-good in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 44
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: kind-pack in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 45
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: HS-code in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 46
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: SB-code in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 47
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: SB-date in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 48
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: no-of-cont in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 49
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: container-no: in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 51
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: container-size: in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 52
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: line-seal-number: in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 53
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: stuffed-packages: in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 54
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: gross-weight: in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 55
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: net-weight: in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 56
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: freight in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 72
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: fright-payable in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 73
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: place-of-issue in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 74
+[19-Jul-2023 16:18:07 UTC] PHP Notice:  Undefined index: date-of-issue in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 75
+[19-Jul-2023 16:18:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 81
+[19-Jul-2023 16:18:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 91
+[19-Jul-2023 16:18:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 104
+[19-Jul-2023 16:18:07 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/qn789ni51lbf/public_html/dhaval/assets/functions/download-job.php on line 113
